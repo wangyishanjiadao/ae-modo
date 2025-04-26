@@ -1,0 +1,133 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #1a1a1a; /* 深色背景 */
+    color: #e0e0e0; /* 浅色文字 */
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    width: 120px;
+    padding: 20px;
+    border-right: 1px solid #333; /* 深色边框 */
+    height: 100vh; /* 占据整个视口高度 */
+    overflow-y: auto; /* 内容过多时滚动 */
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    margin-bottom: 15px; /* 添加一些底部间距 */
+}
+
+.sidebar-logo {
+    width: 30px; /* 设置图片宽度 */
+    height: auto; /* 保持宽高比 */
+    margin-right: 10px; /* 在图片和标题之间添加一些间距 */
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    margin-bottom: 0; /* 移除 h2 的默认底部边距 */
+    color: #fff; /* 白色标题 */
+    font-size: 1.2em; /* 可以调整标题大小 */
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul ul {
+    padding-left: 15px;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: #b0b0b0; /* 灰色链接 */
+    display: block;
+    padding: 5px 0;
+}
+
+.sidebar nav a:hover {
+    color: #fff; /* 悬停时变白 */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main-content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.main-content header input[type="search"] {
+    padding: 8px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-radius: 4px;
+}
+
+.main-content header .header-links a {
+    margin-left: 15px;
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.main-content header .header-links a:hover {
+    color: #fff;
+}
+
+.main-content article h1 {
+    color: #fff;
+}
+
+.main-content article .image-placeholder {
+    border: 1px dashed #555;
+    padding: 50px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #252525;
+}
+
+.right-nav {
+    width: 150px;
+    padding: 20px;
+    border-left: 1px solid #333;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.right-nav h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.right-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-nav ul a {
+    text-decoration: none;
+    color: #b0b0b0;
+    display: block;
+    padding: 3px 0;
+    font-size: 0.9em;
+}
+
+.right-nav ul a:hover {
+    color: #fff;
+}
