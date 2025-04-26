@@ -131,3 +131,109 @@ body {
 .right-nav ul a:hover {
     color: #fff;
 }
+
+
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+  }
+  .sidebar,
+  .right-nav {
+    display: none;
+  }
+  .main-content {
+    padding: 10px;
+  }
+  .main-content header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .main-content header input[type="search"] {
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .main-content header .header-links a {
+    margin-left: 0;
+    margin-right: 10px;
+    font-size: 1em;
+  }
+  .main-content article h1 {
+    font-size: 1.3em;
+  }
+  .main-content article .image-placeholder {
+    padding: 20px;
+    font-size: 0.95em;
+  }
+  body {
+    font-size: 15px;
+  }
+  .mobile-nav {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    background: #222;
+    border-bottom: 1px solid #333;
+    padding: 8px 0 8px 10px;
+    margin-bottom: 10px;
+  }
+  .mobile-nav a {
+    display: inline-block;
+    color: #b0b0b0;
+    text-decoration: none;
+    padding: 6px 18px;
+    margin-right: 8px;
+    border-radius: 18px;
+    font-size: 1em;
+    background: #232323;
+    transition: background 0.2s, color 0.2s;
+  }
+  .mobile-nav a:hover {
+    color: #fff;
+    background: #333;
+  }
+  .mobile-nav-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    border-top: 1px solid #333;
+    background: #222;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.12);
+    padding: 8px 0;
+    margin: 0;
+    list-style: none;
+  }
+  .mobile-nav-bottom li {
+    margin: 0 10px;
+  }
+  .mobile-nav-bottom a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 6px 18px;
+    border-radius: 18px;
+    background: #232323;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
+  }
+  .mobile-nav-bottom a:hover {
+    color: #fff;
+    background: #333;
+  }
+  body {
+    padding-bottom: 56px;
+  }
+}
