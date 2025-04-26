@@ -2,19 +2,21 @@ body {
     font-family: sans-serif;
     margin: 0;
     background-color: #1a1a1a; /* 深色背景 */
-    color: #e0e0e0; /* 浅色文字 */
+    color: #ffffff; /* 浅色文字 主页文字 */
 }
 
 .container {
+  /* 主容器 */
     display: flex;
-    max-width: 1200px;
+    max-width: 12000px;
     margin: 0 auto;
 }
 
-.sidebar {
+.sidebar {、
+  /* 小白条 */
     width: 120px;
     padding: 20px;
-    border-right: 1px solid #333; /* 深色边框 */
+    border-right: 1px solid #444444; /* 深色边框 */
     height: 100vh; /* 占据整个视口高度 */
     overflow-y: auto; /* 内容过多时滚动 */
 }
@@ -29,6 +31,10 @@ body {
     width: 30px; /* 设置图片宽度 */
     height: auto; /* 保持宽高比 */
     margin-right: 10px; /* 在图片和标题之间添加一些间距 */
+}
+.sidebar-zayv {
+    width: 100%; /* 图片填充容器 */
+    height: auto; /* 保持宽高比 */ 
 }
 
 .sidebar h2 {
@@ -124,8 +130,8 @@ body {
     text-decoration: none;
     color: #b0b0b0;
     display: block;
-    padding: 3px 0;
-    font-size: 0.9em;
+    padding: 5px 0;
+    font-size: 1em;
 }
 
 .right-nav ul a:hover {
@@ -252,10 +258,15 @@ body {
 .footer-links li a {
     color: #b0b0b0;
     text-decoration: none;
-    transition: color 0.2s;
+    padding: 6px 18px;
+    margin: 0 8px;
+    border-radius: 18px;
+    font-size: 0.9em;
+    transition: all 0.2s;
 }
 .footer-links li a:hover {
     color: #fff;
+    background: #333;
 }
 @media (max-width: 768px) {
   .footer-links {
